@@ -1,0 +1,40 @@
+package com.simplilearn;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
+public class WebServiceClientTest {
+	
+	private final WebServiceClient webServiceClient = new WebServiceClient();
+	
+	@Test
+	@Timeout(value = 1, unit = TimeUnit.SECONDS)
+	void fetchUserData_ShouldCompleteWithinOneSecond() {
+		String result = null;
+		try {
+			result = webServiceClient.fetchUserData();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals("User Data", result);
+	}
+	
+	@Test
+	@Timeout(value = 3, unit = TimeUnit.SECONDS)
+	void fetchUserData_ShouldCompleteWithinThreeSecond() {
+		String result = null;
+		try {
+			result = webServiceClient.fetchUserData();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals("User Data", result);
+	}
+
+}

@@ -1,0 +1,4 @@
+spring.application.name=employee-management-rest
+
+spring.h2.console.enable=true
+spring.h2.console.path=/h2-console

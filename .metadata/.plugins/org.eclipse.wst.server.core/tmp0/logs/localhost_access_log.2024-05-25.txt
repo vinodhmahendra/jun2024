@@ -1,0 +1,16 @@
+127.0.0.1 - - [25/May/2024:16:01:35 +0000] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:10:15 +0000] "GET /employees HTTP/1.1" 404 760
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:10:15 +0000] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [25/May/2024:17:12:57 +0000] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:12:58 +0000] "GET /employee-management-spring-mvc/ HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:13:44 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:13:49 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:14:26 +0000] "GET /employees HTTP/1.1" 404 760
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:14:52 +0000] "GET /employee-management/ HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:16:41 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+127.0.0.1 - - [25/May/2024:17:17:45 +0000] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:17:46 +0000] "GET /employee-management-spring-mvc/ HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:17:58 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:24:46 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:24:53 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [25/May/2024:17:26:14 +0000] "GET /employee-management-spring-mvc/employees HTTP/1.1" 404 682

@@ -1,0 +1,21 @@
+package com.simplilearn.annotations;
+
+import org.junit.jupiter.api.Test;
+
+//@BeforeEach
+
+//@AfterEach
+public class SetupTeardownTests {
+	
+	
+	@Test
+	public void testMethodOne() {
+		System.out.println("Running testMethodOne.");
+	}
+	
+	@Test
+	public void testMethodTwo() {
+		System.out.println("Running testMethodTwo.");
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.simplilearn.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import com.simplilearn.model.Employee;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+	
+	@ExceptionHandler(EmployeeNotFoundException.class)
+	public ResponseEntity<Employee> handleEmployeeNotFoundException(EmployeeNotFoundException e)
+	{
+		return ResponseEntity.noContent().build();
+	}
+
+}

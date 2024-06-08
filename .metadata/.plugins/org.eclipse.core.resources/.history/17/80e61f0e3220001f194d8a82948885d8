@@ -1,0 +1,18 @@
+package com.simplilearn.resources;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.simplilearn.service.EmployeeService;
+
+@RestController
+@RequestMapping("/api/employees")
+public class EmployeeResource {
+	
+	private final EmployeeService employeeService;
+
+	public EmployeeResource(EmployeeService employeeService) {
+		this.employeeServie = employeeService;
+	}
+
+}

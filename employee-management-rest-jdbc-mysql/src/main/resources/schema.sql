@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Employees (
+	id varchar(255) PRIMARY KEY, 
+	name VARCHAR(255) NOT NULL ,
+	department VARCHAR(255) NOT NULL
+);

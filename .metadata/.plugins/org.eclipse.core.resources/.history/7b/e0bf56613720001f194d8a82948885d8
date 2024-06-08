@@ -1,0 +1,33 @@
+package com.simplilearn.resources;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.simplilearn.model.Employee;
+import com.simplilearn.service.EmployeeService;
+
+@RestController
+@RequestMapping("/api/employees")
+public class EmployeeResource {
+	
+	private final EmployeeService employeeService;
+
+	public EmployeeResource(EmployeeService employeeService) {
+		this.employeeService = employeeService;
+	}
+	
+	//URI : /api/employees/1
+	@GetMapping("/{id}") // URI Template
+	public void getEmployeeById(@PathVariable String id) {
+		System.out.println("ID : " + id);
+	}
+	@GetMapping
+	public List<Employee> getAllEmployees() {
+		return employeeService.getAllEmployees();
+	}
+
+}

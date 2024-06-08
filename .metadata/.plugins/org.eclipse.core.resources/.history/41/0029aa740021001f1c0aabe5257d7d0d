@@ -1,0 +1,24 @@
+package com.simplilearn.exceptions;
+
+import java.time.LocalDateTime;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.simplilearn.model.Employee;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
+	
+	@ExceptionHandler(EmployeeNotFoundException.class)
+	public ResponseEntity<ApiError> handleEmployeeNotFoundException(EmployeeNotFoundException ex,WebRequest request)
+	{
+		ApiError apiError = new ApiError(
+				LocalDateTime.now(),
+				0, PAGE_NOT_FOUND_LOG_CATEGORY, PAGE_NOT_FOUND_LOG_CATEGORY, PAGE_NOT_FOUND_LOG_CATEGORY)
+	}
+
+}
